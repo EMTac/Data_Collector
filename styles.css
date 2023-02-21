@@ -1,0 +1,84 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+}
+
+.hide {
+  display: none;
+}
+
+.clear {
+  float: none;
+  clear: both;
+}
+
+.rating {
+    width: 90px;
+    unicode-bidi: bidi-override;
+    direction: rtl;
+    text-align: center;
+    position: relative;
+}
+
+.rating > label {
+    float: right;
+    display: inline;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    width: 1.1em;
+    cursor: pointer;
+    color: #000;
+}
+
+.rating > label:hover,
+.rating > label:hover ~ label,
+.rating > input.radio-btn:checked ~ label {
+    color: transparent;
+}
+
+.rating > label:hover:before,
+.rating > label:hover ~ label:before,
+.rating > input.radio-btn:checked ~ label:before,
+.rating > input.radio-btn:checked ~ label:before {
+    content: "\f005";
+    font-family: "FontAwesome";
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+    color: orange;
+}
+
+.photo {
+  text-align: left;
+  position: relative;
+}
+
+.photo > label:hover,
+.photo > label:hover ~ label {
+    color: transparent;
+}
+
+.photo > label:hover:before,
+.photo > label:hover ~ label:before {
+    content: "\f03e";
+    font-family: "FontAwesome";
+    font-weight: 400;
+    position: absolute;
+    left: 0;
+    color: rgb(85, 107, 230);
+}
+
+.infobox .leaflet-popup-tip {
+  display: none
+}
+
+.leaflet-popup-content-wrapper .leaflet-popup-content {
+  opacity: 1;
+}
